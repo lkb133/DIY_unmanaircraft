@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <link rel="manifest" href="manifest.json" />
+</head>
+<style>
+
+</style>
+
+<body>
+  <meta name="theme-color" content="peachpuff" />
+  123
+  <div>发送信息</div>
+  <input placeholder="请输入要发送的信息" />
+  <button onclick="postMessage()">发送</button>
+</body>
+
+</html>
+<script>
+  let url = "ws://127.0.0.1:1234"
+  let Socket = new WebSocket(url)
+  Socket.onopen = () => {
+    Socket.send("hello")
+  }
+  socket.onmessage = (event) => {
+    console.log("Received:", event.data)
+  }
+
+  socket.onerror = (error) => {
+    console.error("WebSocket Error:", error)
+  }
+</script>
