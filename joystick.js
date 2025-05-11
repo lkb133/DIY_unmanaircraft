@@ -5,7 +5,7 @@ let baseCenter = {
 };
 let maxDistance = baseRect.width / 2;
 
-let isDragging = false;
+let isDragging_joystick = false;
 let lastValues = { x: 0, y: 0, angle: 0, force: 0 };
 
 // 更新摇杆位置和输出值
@@ -62,14 +62,14 @@ function resetJoystick() {
 // 鼠标/触摸事件处理
 function handleStart(e) {
   e.preventDefault();
-  isDragging = true;
+  isDragging_joystick = true;
   const clientX = e.clientX || e.touches[0].clientX;
   const clientY = e.clientY || e.touches[0].clientY;
   updateJoystick(clientX, clientY);
 }
 
 function handleMove(e) {
-  if (!isDragging) return;
+  if (!isDragging_joystick) return;
   e.preventDefault();
   const clientX = e.clientX || (e.touches && e.touches[0].clientX);
   const clientY = e.clientY || (e.touches && e.touches[0].clientY);
@@ -80,7 +80,7 @@ function handleMove(e) {
 }
 
 function handleEnd() {
-  isDragging = false;
+  isDragging_joystick = false;
   resetJoystick();
 }
 

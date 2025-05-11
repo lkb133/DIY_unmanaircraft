@@ -149,6 +149,49 @@
         font-size: 14px;
       }
     }
+
+    .slider-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 300px;
+    }
+
+    .slider-value {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .slider-track {
+      width: 8px;
+      height: 300px;
+      background-color: #ddd;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .slider-thumb {
+      width: 30px;
+      height: 30px;
+      background-color: #4CAF50;
+
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: grab;
+      touch-action: none;
+      /* 防止触摸设备上的默认行为 */
+    }
+
+    .slider-fill {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #4CAF50;
+      border-radius: 4px;
+    }
   </style>
 </head>
 
@@ -171,12 +214,16 @@
 
     <div class="panel right-panel">
       <!-- 右侧面板内容 -->
-      <div class="output">
-        <h3>摇杆数据</h3>
-        <p>X: <span id="x-value">0</span></p>
-        <p>Y: <span id="y-value">0</span></p>
-        <p>角度: <span id="angle-value">0</span>°</p>
-        <p>力度: <span id="force-value">0</span>%</p>
+      <div class="slider-container">
+        <div class="output">
+          <h3>右摇杆数据</h3>
+          <p>X: <span id="x-value">0</span></p>
+          <p>Y: <span id="y-value">0</span></p>
+        </div>
+        <div class="slider-track" id="sliderTrack">
+          <div class="slider-thumb" id="sliderThumb"></div>
+          <div class="slider-fill" id="sliderFill"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -230,3 +277,4 @@
   }
 </script>
 <script src="./joystick.js"></script>
+<script src="./slider.js"></script>
