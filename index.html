@@ -203,7 +203,6 @@
         <p>X: <span id="x-value">0</span></p>
         <p>Y: <span id="y-value">0</span></p>
         <p>角度: <span id="angle-value">0</span>°</p>
-        <p>力度: <span id="force-value">0</span>%</p>
       </div>
       <div class="joystick-container">
         <div class="joystick-base" id="joystick-base">
@@ -217,8 +216,7 @@
       <div class="slider-container">
         <div class="output">
           <h3>右摇杆数据</h3>
-          <p>X: <span id="x-value">0</span></p>
-          <p>Y: <span id="y-value">0</span></p>
+          <p>Y: <span id="sliderValue">0</span></p>
         </div>
         <div class="slider-track" id="sliderTrack">
           <div class="slider-thumb" id="sliderThumb"></div>
@@ -237,7 +235,6 @@
   const xValue = document.getElementById('x-value');
   const yValue = document.getElementById('y-value');
   const angleValue = document.getElementById('angle-value');
-  const forceValue = document.getElementById('force-value');
 
   // 如果是移动设备，检查方向
   if (/Mobi|Android/i.test(navigator.userAgent)) {
@@ -276,5 +273,6 @@
     }
   }
 </script>
+<script src="./websocket.js"></script>
 <script src="./joystick.js"></script>
 <script src="./slider.js"></script>
