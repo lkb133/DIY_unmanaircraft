@@ -10,6 +10,7 @@
             "includePath": [
                 "e:/project/unmanfly/include",
                 "e:/project/unmanfly/src",
+                "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos",
@@ -238,7 +239,6 @@
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                 "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
@@ -249,6 +249,7 @@
                 "path": [
                     "e:/project/unmanfly/include",
                     "e:/project/unmanfly/src",
+                    "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos",
@@ -477,7 +478,6 @@
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/USB/src",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/Update/src",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src",
-                    "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src",
                     "C:/Users/Administrator.DESKTOP-JSUSA6T/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
